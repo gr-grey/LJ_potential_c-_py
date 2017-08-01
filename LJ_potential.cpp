@@ -25,8 +25,8 @@ double radius(py::array_t<double> A, size_t i, size_t j, double box_length)
 	double rx, ry, rz;
 	// Here all the i should be i*row_stride, but to row_stride is 1 so I'm omiting it in ry and rz.
 	rx = A_data[i * row_stride] - A_data[j * row_stride];
-	ry = A_data[i + col_stride] - A_data[j +  col_stride];
-	rz = A_data[i + 2 * col_stride] - A_data[j + 2 * col_stride];
+	ry = A_data[i * row_stride + col_stride] - A_data[j * row_stride +  col_stride];
+	rz = A_data[i * row_stride + 2 * col_stride] - A_data[j * row_stride + 2 * col_stride];
 
 	rx = rx - round(rx/box_length) * box_length;
 	ry = ry - round(ry/box_length) * box_length;

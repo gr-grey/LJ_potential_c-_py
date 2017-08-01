@@ -17,5 +17,5 @@ In python, import LJ_potential and call the functions
 
 LJ_potential.total_pair_e(configuration, box_length, cutoff)
 
-LJ_potential.get_mol_e(configuration, i, box_length, cutoff))
+LJ_potential.get_mol_e(configuration, i, box_length, cutoff)
 
