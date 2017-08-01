@@ -1,0 +1,1 @@
+/Users/Grey/miniconda/envs/sss/bin/c++   -bundle -Wl,-headerpad_max_install_names  -o LJ_potential.cpython-35m-darwin.so CMakeFiles/LJ_potential.dir/LJ_potential.cpp.o -undefined dynamic_lookup 
